@@ -2,6 +2,7 @@
 
 const elAccordions = document.querySelectorAll('.accordion__item');
 
+
 elAccordions.forEach((item, index) => {
   item.addEventListener('click', function () {
     this.classList.toggle('accordion__item_active');
@@ -23,18 +24,13 @@ elAccordions.forEach((item, index) => {
         : headerAccordionNumber.textContent = '';
     }
 
+    // Аккордион FAQ
+
+    const elAccordionHeaders = this.querySelector('.section-faq__header');
+    elAccordionHeaders.classList.toggle('active');
   });
 });
 
-// Аккордион FAQ
-
-const elAccordionHeaders = document.querySelectorAll('.section-faq__header');
-
-elAccordionHeaders.forEach(item => {
-  item.addEventListener('click', function () {
-    this.classList.toggle('active');
-  });
-});
 
 // Кнопка "Показать ещё"
 

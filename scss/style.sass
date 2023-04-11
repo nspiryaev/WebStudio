@@ -1,0 +1,1318 @@
+@font-face
+  font-family: 'Lack'
+  font-style: normal
+  font-weight: 400
+  src: url('../fonts/Lackregular.woff2'), url('../fonts/Lackregular.woff')
+
+@font-face
+  font-family: 'Inter'
+  font-style: normal
+  font-weight: 400
+  src: url('../fonts/inter-v12-cyrillic_latin-regular.woff2'), url('../fonts/inter-v12-cyrillic_latin-regular.woff')
+
+@font-face
+  font-family: 'Inter'
+  font-style: bold
+  font-weight: 700
+  src: url('../fonts/inter-v12-cyrillic_latin-700.woff2'), url('../fonts/inter-v12-cyrillic_latin-700.woff')
+
+@import "_normalize.scss"
+@import "_reset.scss"
+
+*
+  box-sizing: border-box
+
+html
+  font-family: 'Lack', sans-serif
+
+a
+  text-decoration: none
+
+$color_green: #00FF85
+$color_lightBlue: #D5EFFA
+$color_dark: #2D2D2D
+
+.container
+  margin: 0 auto
+  padding: 0 15px
+  max-width: 1192px
+  @media (max-width:1199px)
+    max-width: 960px
+  @media (max-width:991px)
+    max-width: 720px
+  @media (max-width:767px)
+    max-width: 540px
+  @media (max-width:575px)
+    max-width: 100%
+
+.btn
+  padding: 20px 55px
+  border: none
+  border-radius: 8px
+  font-size: 20px
+  line-height: 120%
+  background: linear-gradient(94.4deg, #00FF85 0.68%, #92FFCA 25.97%, #00FF85 83.47%, #00FF85 98.45%)
+  color: #000000
+  transition: all 0.1s ease-out
+  @media (max-width:991px)
+    padding: 20px 50px
+  @media (max-width:767px)
+    padding: 20px 35px
+  @media (max-width: 575px)
+    font-size: 16px
+  &:hover
+    opacity: 0.8
+    cursor: pointer
+    transform: scale(1.025) translateY(5px)
+
+.heading
+  font-size: 60px
+  line-height: 120%
+  text-transform: uppercase
+  color: black
+  @media (max-width:1199px)
+    font-size: 42px
+  @media (max-width: 767px)
+    font-size: 30px
+  @media (max-width: 575px)
+    font-size: 28px
+    text-align: center
+
+.description
+  font-size: 18px
+  line-height: 145%
+  @media (max-width: 767px)
+    font-size: 16px
+
+// header
+
+.header
+  padding: 18px 0
+  background-color: black
+  &__container
+    display: flex
+    justify-content: space-between
+    align-items: center
+    @media (max-width:575px)
+      flex-direction: column
+      align-items: center
+      margin-bottom: 20px
+  &__list
+    display: flex
+  &__item
+    margin-right: 40px
+    @media (max-width:991px)
+      margin-right: 20px
+    &:last-child
+      margin-right: 0
+  &__nav
+    margin-right: 65px
+    font-size: 16px
+    line-height: 100%
+    text-transform: uppercase
+    @media (max-width:1199px)
+      font-size: 14px
+    @media (max-width:991px)
+      font-size: 12px
+      margin-right: 0
+    @media (max-width:767px)
+      display: none
+  &__link
+    color: white
+    transition: color .3s ease
+    &:hover
+      color: $color_green
+  &__hr
+    border: none
+    border-top: 1px solid #FFFFFF
+    opacity: 0.2
+
+.social
+  &__list
+    display: flex
+  &__item
+    margin-right: 56px
+    @media (max-width:1199px)
+      margin-right: 30px
+    @media (max-width:991px)
+      margin-right: 25px
+    &:last-child
+      margin-right: 0
+    svg
+      path
+        transition: fill .3s ease
+    &:hover
+      svg
+        path
+          fill: $color_green
+
+.logo
+  @media (max-width:575px)
+    margin-bottom: 15px
+  &__img
+    @media (max-width:991px)
+      max-width: 150px
+    @media (max-width:767px)
+      max-width: 100%
+
+// section-hero
+
+.wrapper
+  overflow: hidden
+
+.section-hero
+  padding: 100px 0 150px 0
+  background-color: black
+  @media (max-width:1199px)
+    padding: 50px 0 75px 0
+  @media (max-width:991px)
+    padding: 25px 0 75px 0
+  @media (max-width:767px)
+    padding: 15px 0 60px 0
+  @media (max-width:575px)
+    padding: 15px 0 30px 0
+  &__container
+    position: relative
+  &__list
+    display: flex
+    justify-content: space-between
+    @media (max-width:575px)
+      flex-direction: column
+      align-items: center
+  &__item
+    flex: 0 1 50%
+    @media (max-width:575px)
+      flex: 0 1 100%
+      text-align: center
+    &:nth-child(2)
+      display: flex
+      align-items: flex-end
+  &__heading
+    position: relative
+    margin-bottom: 30px
+    font-size: 60px
+    line-height: 120%
+    text-transform: uppercase
+    color: white
+    z-index: 10
+    @media (max-width:1199px)
+      font-size: 50px
+    @media (max-width:991px)
+      margin-bottom: 20px
+      font-size: 36px
+    @media (max-width:767px)
+      font-size: 25px
+    span
+      color: $color_green
+  &__description
+    position: relative
+    margin-bottom: 30px
+    font-size: 20px
+    line-height: 120%
+    color: white
+    opacity: 0.5
+    z-index: 10
+    @media (max-width:991px)
+      margin-bottom: 25px
+      font-size: 18px
+    @media (max-width:767px)
+      font-size: 16px
+  &__content-wrapper
+    position: relative
+    display: flex
+    justify-content: flex-end
+    align-items: center
+    width: 100%
+    z-index: 10
+  &__img
+    margin-right: 25px
+    width: 80px
+    height: 80px
+    @media (max-width:991px)
+      margin-right: 15px
+    @media (max-width:767px)
+      margin-right: 10px
+      width: 60px
+    @media (max-width:575px)
+      width: 50px
+  &__guarantee
+    font-size: 20px
+    line-height: 24px
+    color: white
+    @media (max-width:991px)
+      font-size: 18px
+    @media (max-width:575px)
+      font-size: 16px
+  &__rocket
+    position: absolute
+    top: -40px
+    right: 0px
+    z-index: 3
+    @media (max-width:1199px)
+      width: 50%
+    @media (max-width:991px)
+      top: -30px
+    @media (max-width:575px)
+      display: none
+  &__fire-1
+    position: absolute
+    top: -220px
+    right: -320px
+    z-index: 1
+    @media (max-width:1199px)
+      top: -135px
+      right: -260px
+      width: 100%
+    @media (max-width:991px)
+      top: -85px
+      right: -222px
+    @media (max-width:767px)
+      right: -145px
+    @media (max-width:575px)
+      display: none
+  &__fire-2
+    position: absolute
+    top: -61px
+    right: -357px
+    z-index: 2
+    @media (max-width:1199px)
+      top: 61px
+      right: -250px
+      width: 100%
+    @media (max-width:991px)
+      top: 50px
+      right: -190px
+    @media (max-width: 767px)
+      top: 25px
+      right: -120px
+    @media (max-width:575px)
+      display: none
+  &__fire-3
+    position: absolute
+    top: -172px
+    left: -520px
+    z-index: 0
+    @media (max-width:1199px)
+      top: 20px
+      left: -325px
+      width: 100%
+    @media (max-width:991px)
+      top: 40px
+      left: -200px
+    @media (max-width: 767px)
+      display: none
+  &__btn
+    position: relative
+    z-index: 10
+    @media (max-width:575px)
+      margin-bottom: 25px
+
+// section-facts
+
+.section-facts
+  padding: 100px 0 75px 0
+  background-color: $color_lightBlue
+  @media (max-width: 767px)
+    padding: 50px 0
+  &__container
+    display: flex
+    justify-content: space-between
+    @media (max-width:991px)
+      flex-direction: column
+      align-items: center
+  &__heading
+    margin-bottom: 50px
+    @media (max-width: 767px)
+      margin-bottom: 25px
+    @media (max-width:575px)
+      margin-bottom: 40px
+  &__description
+    font-family: 'Inter', sans-serif
+    color: $color_dark
+  &__list
+    @media (max-width:991px)
+      margin-bottom: 50px
+    @media (max-width:755px)
+      margin-bottom: 30px
+  &__item
+    display: flex
+    align-items: center
+    margin-bottom: 40px
+    @media (max-width:575px)
+      flex-direction: column
+      text-align: center
+    &:last-child
+      margin-bottom: 0
+  &__content
+    flex: 0 0 55%
+    @media (max-width:991px)
+      flex: 0 1 100%
+
+.number
+  position: relative
+  margin-right: 54px
+  min-width: 140px
+  height: 140px
+  border: 1px solid black
+  border-radius: 50%
+  @media (max-width: 767px)
+    margin-right: 30px
+    min-width: 100px
+    height: 100px
+  @media (max-width:575px)
+    margin-bottom: 15px
+  span
+    position: absolute
+    top: -50px
+    right: -7px
+    font-size: 130px
+    line-height: 130%
+    text-transform: uppercase
+    @media (max-width: 767px)
+      top: -28px
+      right: -5px
+      font-size: 80px
+
+.think
+  position: relative
+  width: 360px
+  height: 430px
+  z-index: 10
+  @media (max-width:1199px)
+    align-self: flex-end
+  @media (max-width:991px)
+    align-self: center
+  @media (max-width: 991px)
+    width: 100%
+    height: 320px
+  @media (max-width: 767px)
+    height: 340px
+  @media (max-width: 575px)
+    height: auto
+  &__content
+    position: relative
+    padding: 37px
+    width: 100%
+    height: 100%
+    background: $color_lightBlue
+    border: 1px solid black
+    border-radius: 40px
+    z-index: 2
+  &__shadow
+    position: absolute
+    top: -13px
+    left: -13px
+    width: 100%
+    height: 430px
+    background: white
+    border-radius: 40px
+    z-index: 1
+    @media (max-width: 991px)
+      height: 320px
+    @media (max-width: 767px)
+      height: 340px
+    @media (max-width: 575px)
+      display: none
+  &__title
+    margin-bottom: 25px
+    color: $color_dark
+    @media (max-width: 575px)
+      margin-bottom: 15px
+  &__description
+    position: relative
+    margin-bottom: 60px
+    font-family: 'Inter', sans-serif
+    color: $color_dark
+    z-index: 2
+    @media (max-width: 575px)
+      margin-bottom: 40px
+  &__qick
+    position: relative
+    font-size: 20px
+    line-height: 130%
+    text-transform: uppercase
+    color: $color_dark
+    z-index: 2
+  &__img
+    position: absolute
+    bottom: -25px
+    right: 15px
+    z-index: 1
+    @media (max-width: 575px)
+      right: 5px
+
+.title
+  font-size: 32px
+  line-height: 130%
+  text-transform: uppercase
+  @media (max-width:575px)
+    font-size: 22px
+
+// section-why
+
+.section-why
+  padding: 50px 0
+  background-color: $color_lightBlue
+  @media (max-width:767px)
+    padding: 30px 0
+  &__container
+    display: flex
+    justify-content: flex-end
+  &__wrapper
+    position: relative
+    display: flex
+    justify-content: flex-end
+    align-items: center
+    width: 1000px
+    background-color: black
+    border-radius: 40px
+    @media (max-width:1199px)
+      width: 82%
+    @media (max-width:767px)
+      width: 100%
+      overflow: hidden
+    @media (max-width:575px)
+      justify-content: center
+  &__content
+    position: relative
+    padding: 50px 25px
+    max-width: 580px
+    z-index: 10
+    @media (max-width:1199px)
+      padding: 25px 20px
+      max-width: 430px
+    @media (max-width:991px)
+      max-width: 340px
+    @media (max-width:575px)
+      text-align: center
+  &__notebook
+    position: absolute
+    top: -55px
+    left: -270px
+    z-index: 2
+    @media (max-width:1199px)
+      left: -260px
+      width: 70%
+    @media (max-width:991px)
+      left: -220px
+      width: 95%
+    @media (max-width:767px)
+      display: none
+  &__abstraction
+    position: absolute
+    top: 0
+    left: -160px
+    height: 100%
+    z-index: 1
+    @media (max-width:991px)
+      left: -260px
+    @media (max-width:575px)
+      display: none
+  &__title
+    margin-bottom: 20px
+    color: white
+    @media (max-width:1199px)
+      margin-bottom: 15px
+  &__description
+    margin-bottom: 75px
+    color: white
+    @media (max-width:1199px)
+      margin-bottom: 40px
+    @media (max-width:575px)
+      margin-bottom: 30px
+
+// section-work
+
+.section-work
+  padding: 50px 0 120px 0
+  background-color: $color_lightBlue
+  @media (max-width: 1199px)
+    padding: 30px 0 80px 0
+  @media (max-width:991px)
+    padding: 30px 0 60px 0
+  @media (max-width:575px)
+    padding: 15px 0 30px 0
+  &__heading
+    margin-bottom: 60px
+    @media (max-width:991px)
+      margin-bottom: 40px
+    @media (max-width:575px)
+      margin-bottom: 20px
+
+.accordion
+  &__item
+    margin-bottom: 25px
+    padding: 20px 24px 15px 24px
+    width: 100%
+    border-width: 6px 0px 1px 0px
+    border-style: solid
+    border-color: $color_dark
+    border-radius: 40px
+    cursor: pointer
+    transition: all 0.3s ease-out
+    @media (max-width: 575px)
+      margin-bottom: 15px
+    &:hover
+      background-color: $color_dark
+      color: white
+  &__item_active
+    background-color: $color_dark
+    color: white
+  &__header
+    margin-bottom: 10px
+    font-size: 26px
+    line-height: 130%
+    text-transform: uppercase
+    @media (max-width: 767px)
+      font-size: 18px
+    @media (max-width: 575px)
+      font-size: 14px
+  &__content
+    max-height: 0
+    overflow: hidden
+    font-family: 'Inter', sans-serif
+    font-size: 18px
+    line-height: 145%
+    color: #B9B9B9
+    transition: all 0.3s ease-out
+    @media (max-width: 767px)
+      font-size: 16px
+    @media (max-width: 575px)
+      font-size: 14px
+  &__content_active
+    max-height: 1000px
+
+// section-benefit
+
+.section-benefit
+  padding: 84px 0
+  background-color: black
+  @media (max-width: 1199px)
+    padding: 30px 0
+  &__container
+    position: relative
+  &__img
+    position: absolute
+    top: 50%
+    left: 120px
+    transform: translateY(-50%)
+    @media (max-width: 1199px)
+      width: 80%
+      left: -50px
+    @media (max-width: 991px)
+      top: 70px
+      left: -210px
+      transform: none
+    @media (max-width: 767px)
+      display: none
+
+.content-wrapper
+  display: flex
+  justify-content: space-between
+  width: 100%
+  @media (max-width: 991px)
+    flex-direction: column
+    align-items: flex-end
+  @media (max-width: 767px)
+    align-items: center
+  &__item
+    position: relative
+    flex: 0 1 36%
+    z-index: 10
+    @media (max-width: 1199px)
+      flex: 0 1 33%
+    @media (max-width: 991px)
+      flex: 0 1 100%
+    &:nth-child(1)
+      @media (max-width: 991px)
+        display: flex
+        flex-direction: column
+        align-items: flex-end
+        margin-bottom: 30px
+        text-align: right
+      @media (max-width: 767px)
+        align-items: center
+        text-align: center
+    &:nth-child(2)
+      display: flex
+      justify-content: flex-end
+      @media (max-width: 767px)
+        justify-content: center
+  &__title
+    margin-bottom: 20px
+    color: white
+  &__description
+    margin-bottom: 40px
+    color: white
+    opacity: 0.5
+    @media (max-width: 991px)
+      margin-bottom: 20px
+
+.form
+  width: 360px
+  @media (max-width: 991px)
+    display: flex
+    flex-direction: column
+  @media (max-width: 575px)
+    width: 280px
+  &__input
+    margin-bottom: 16px
+    padding-left: 20px
+    width: 360px
+    height: 64px
+    font-size: 20px
+    border: none
+    border-radius: 8px
+    background-color: white
+    color: black
+    @media (max-width: 575px)
+      margin-bottom: 12px
+      width: 280px
+    &:focus
+      outline: 3px solid $color_green
+    &::placeholder
+      font-size: 20px
+      line-height: 100%
+      color: black
+      opacity: 0.2
+  &__btn
+    margin-bottom: 24px
+    @media (max-width: 575px)
+      margin-bottom: 15px
+  &__desctiption
+    font-family: 'Inter', sans-serif
+    font-size: 12px
+    line-height: 145%
+    color: white
+    @media (max-width: 767px)
+      text-align: center
+  &__link
+    color: #D5EFFA
+
+// section-case
+
+.section-case
+  padding: 110px 0
+  @media (max-width: 767px)
+    padding: 50px 0
+  &__header
+    @media (max-width: 575px)
+      text-align: center
+  &__heading
+    margin-bottom: 38px
+    max-width: 600px
+    @media (max-width: 1199px)
+      max-width: 100%
+    @media (max-width: 767px)
+      max-width: 300px
+    @media (max-width: 575px)
+      margin-bottom: 15px
+      max-width: 100%
+  &__problems
+    position: relative
+    padding: 40px
+    border-radius: 40px
+    background-color: black
+    @media (max-width: 575px)
+      padding: 25px
+      padding-top: 230px
+  &__img-site
+    position: absolute
+    top: -458px
+    right: 0
+    @media (max-width: 1199px)
+      top: -130px
+      width: 290px
+    @media (max-width: 992px)
+      top: -78px
+    @media (max-width: 767px)
+      top: -255px
+      width: 230px
+    @media (max-width: 575px)
+      top: -120px
+      right: 50%
+      transform: translateX(50%)
+  &__content-propblems
+    max-width: 600px
+    @media (max-width: 992px)
+      max-width: 360px
+    @media (max-width: 767px)
+      max-width: 100%
+  &__solution
+    position: relative
+    padding: 40px
+    border-radius: 40px
+    background-color: $color_lightBlue
+    overflow: hidden
+    @media (max-width: 575px)
+      padding: 25px
+  &__content-solution
+    max-width: 760px
+  &__img-arrows
+    position: absolute
+    top: 50%
+    right: 0
+    transform: translateY(-50%)
+    @media (max-width: 1199px)
+      opacity: 0.2
+      z-index: 0
+    @media (max-width: 767px)
+      width: 250px
+  &__result
+    padding: 40px
+    border-radius: 40px
+    background-color: #F2F2F2
+    @media (max-width: 575px)
+      padding: 25px
+  &__link
+    display: inline-block
+    margin-bottom: 60px
+    font-family: 'Inter'
+    font-size: 18px
+    line-height: 145%
+    color: black
+    @media (max-width: 992px)
+      margin-bottom: 25px
+    @media (max-width: 575px)
+      margin-bottom: 120px
+  &__title
+    margin-bottom: 25px
+    font-size: 26px
+    line-height: 130%
+    text-transform: uppercase
+    @media (max-width: 575px)
+      margin-bottom: 15px
+      font-size: 22px
+      text-align: center
+  &__list
+    position: relative
+    z-index: 1
+  &__item
+    display: flex
+    margin-bottom: 25px
+    font-family: 'Inter'
+    font-size: 18px
+    line-height: 145%
+    color: $color_dark
+    @media (max-width: 992px)
+      font-size: 16px
+    @media (max-width: 575px)
+      margin-bottom: 20px
+      font-size: 14px
+    &:last-child
+      margin-bottom: 0
+  &__number
+    margin-right: 15px
+    font-size: 26px
+    @media (max-width: 992px)
+      font-size: 22px
+    @media (max-width: 575px)
+      margin-right: 10px
+      font-size: 20px
+
+.color-white
+  color: white
+  span
+    color: $color_lightBlue
+
+.bold
+  font-weight: 700
+
+.box-top
+  display: flex
+  justify-content: space-between
+  align-items: center
+  margin-bottom: 90px
+  @media (max-width: 1199px)
+    flex-direction: column
+    margin-bottom: 50px
+  @media (max-width: 575px)
+    margin-bottom: 25px
+  &__image
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-right: 80px
+    padding: 15px
+    background-color: white
+    border-radius: 19px
+    box-shadow: 0 0 10px 5px rgba(221, 221, 221, 1)
+    @media (max-width: 1199px)
+      margin-bottom: 30px
+      margin-right: 0
+    @media (max-width: 575px)
+      display: none
+  &__img
+    @media (max-width: 1199px)
+      max-width: 100%
+    @media (max-width: 575px)
+      display: none
+  &__list
+    @media (max-width: 1199px)
+      display: flex
+      justify-content: space-between
+      margin: 0 -20px
+    @media (max-width: 575px)
+      flex-direction: column
+  &__item
+    margin-bottom: 30px
+    @media (max-width: 1199px)
+      flex: 0 1 50%
+      margin-bottom: 0
+      padding: 0 20px
+    @media (max-width: 575px)
+      margin-bottom: 15px
+      text-align: center
+    &:last-child
+      margin-bottom: 0
+  &__number
+    margin-bottom: 10px
+    font-size: 60px
+    line-height: 120%
+    text-transform: uppercase
+    color: $color_dark
+    @media (max-width: 575px)
+      font-size: 40px
+  &__text
+    font-family: 'Inter'
+    font-size: 16px
+    line-height: 145%
+    color: $color_dark
+    @media (max-width: 575px)
+      font-size: 14px
+
+.box-bottom
+  display: flex
+  justify-content: center
+  align-items: center
+  &__content
+    display: flex
+    justify-content: space-between
+    align-items: center
+    @media (max-width: 575px)
+      flex-direction: column
+  &__img
+    margin-right: 50px
+    max-width: 100%
+    @media (max-width: 575px)
+      margin-bottom: 20px
+      margin-right: 0
+      max-width: 100px
+  &__text
+    max-width: 700px
+    font-size: 22px
+    line-height: 130%
+    color: $color_dark
+    @media (max-width: 767px)
+      font-size: 18px
+    @media (max-width: 575px)
+      font-size: 16px
+      text-align: center
+
+// section-portfolio
+
+.section-portfolio
+  padding: 95px 0
+  background-color: black
+  @media (max-width: 991px)
+    padding: 50px 0
+  @media (max-width: 575px)
+    padding: 30px 0
+  &__heading
+    margin-bottom: 65px
+    color: white
+    @media (max-width: 991px)
+      margin-bottom: 30px
+  &__list
+    margin-bottom: 55px
+    @media (max-width: 575px)
+      margin-bottom: 30px
+  &__item
+    margin-bottom: 35px
+    @media (max-width: 991px)
+      margin-bottom: 25px
+    &:nth-child(n+4)
+      display: none
+    &:last-child
+      margin-bottom: 0
+    &.is-visible
+      display: flex
+  &__button
+    display: flex
+    justify-content: center
+  &__btn
+    padding-right: 100px
+    padding-left: 100px
+    font-size: 20px
+    line-height: 120%
+    @media (max-width: 575px)
+      padding-right: 35px
+      padding-left: 35px
+
+.portfolio-card
+  display: flex
+  justify-content: space-between
+  padding: 50px 70px 0 70px
+  border: 1px solid white
+  border-radius: 40px
+  color: white
+  @media (max-width: 991px)
+    flex-direction: column
+    padding: 30px 50px 0 50px
+  @media (max-width: 575px)
+    padding: 30px 30px 0
+  &__content
+    flex: 0 1 330px
+    @media (max-width: 991px)
+      flex: 0 1 100%
+      margin-bottom: 30px
+  &__image
+    display: flex
+    align-items: flex-end
+    @media (max-width: 991px)
+      justify-content: center
+  &__img
+    max-width: 100%
+  &__title
+    margin-bottom: 10px
+    @media (max-width: 991px)
+      margin-bottom: 5px
+  &__name
+    margin-bottom: 30px
+    font-size: 22px
+    line-height: 120%
+    color: white
+    opacity: 0.5
+    @media (max-width: 991px)
+      margin-bottom: 15px
+    @media (max-width: 575px)
+      font-size: 18px
+  &__description
+    margin-bottom: 50px
+    font-family: 'Inter'
+    font-size: 16px
+    line-height: 145%
+    color: white
+    @media (max-width: 991px)
+      margin-bottom: 25px
+    @media (max-width: 575px)
+      font-size: 16px
+  &__link
+    font-size: 22px
+    line-height: 130%
+    color: $color_lightBlue
+    @media (max-width: 767px)
+      font-size: 18px
+
+// section-bonus
+
+.section-bonus
+  padding-bottom: 100px
+  background-color: black
+  overflow: hidden
+  @media (max-width: 991px)
+    padding-top: 50px
+  @media (max-width: 575px)
+    padding-top: 65px
+    padding-bottom: 50px
+  &__top
+    position: relative
+    padding: 50px
+    border-radius: 40px
+    background-color: $color_lightBlue
+    @media (max-width: 991px)
+      padding-top: 310px
+    @media (max-width: 767px)
+      padding: 30px
+      padding-top: 310px
+    @media (max-width: 575px)
+      padding: 170px 15px 30px 15px
+      text-align: center
+  &__wrapper-top
+    max-width: 760px
+    @media (max-width: 1199px)
+      max-width: 570px
+  &__title
+    margin-bottom: 20px
+    color: $color_dark
+    @media (max-width: 1199px)
+      font-size: 24px
+    @media (max-width: 575px)
+      font-size: 18px
+  &__deadline
+    max-width: 500px
+    font-size: 18px
+    line-height: 140%
+    color: $color_dark
+    opacity: 0.5
+    @media (max-width: 767px)
+      max-width: 100%
+      font-size: 16px
+  &__img
+    position: absolute
+    top: 50%
+    right: -80px
+    transform: translateY(-50%)
+    @media (max-width: 1199px)
+      right: -120px
+    @media (max-width: 991px)
+      top: -80px
+      right: 50%
+      transform: none
+      transform: translateX(50%)
+    @media (max-width: 575px)
+      width: 300px
+  &__bottom
+    padding: 50px
+    border-radius: 40px
+    background-color: white
+    @media (max-width: 767px)
+      padding: 30px
+    @media (max-width: 575px)
+      text-align: center
+    @media (max-width: 575px)
+      padding: 30px 15px
+  &__content
+    display: flex
+    justify-content: space-between
+    margin: 0 -50px
+    margin-bottom: 50px
+    @media (max-width: 991px)
+      margin: 0 -30px
+      margin-bottom: 40px
+    @media (max-width: 767px)
+      flex-direction: column
+      margin-bottom: 20px
+  &__other-studio
+    flex: 0 1 50%
+    padding: 0 50px
+    font-family: 'Inter'
+    font-size: 18px
+    line-height: 145%
+    color: $color_dark
+    opacity: 0.5
+    @media (max-width: 991px)
+      padding: 0 30px
+    @media (max-width: 767px)
+      margin-bottom: 20px
+      font-size: 16px
+      &:last-child
+        margin-bottom: 0
+  &__we
+    padding: 20px 100px
+    margin-bottom: 60px
+    border: 1px solid #B9B9B9
+    border-radius: 17px
+    text-align: center
+    @media (max-width: 1199px)
+      margin-bottom: 40px
+    @media (max-width: 991px)
+      padding: 20px 30px
+    @media (max-width: 767px)
+      margin-bottom: 30px
+      padding: 20px
+  &__description
+    font-size: 18px
+    line-height: 140%
+    color: $color_dark
+    @media (max-width: 767px)
+      font-size: 16px
+  &__wrapper-bottom
+    display: flex
+    justify-content: space-between
+    align-items: center
+    @media (max-width: 1199px)
+      flex-direction: column-reverse
+    @media (max-width: 991px)
+      flex-direction: column
+  &__form
+    display: flex
+    width: 800px
+    @media (max-width: 991px)
+      flex-direction: column
+      align-items: center
+      margin-bottom: 30px
+      width: 100%
+    @media (max-width: 575px)
+      margin-bottom: 20px
+    input[type="tel"]
+      margin-right: 20px
+      margin-bottom: 0
+      width: 380px
+      height: 90px
+      outline: 1px solid #B9B9B9
+      border-radius: 8px
+      @media (max-width: 991px)
+        margin-bottom: 16px
+        margin-right: 0
+      @media (max-width: 575px)
+        margin-bottom: 10px
+        width: 100%
+        height: 60px
+      &:focus
+        outline: 3px solid $color_green
+    button
+      margin-bottom: 0
+      padding: 0
+      width: 400px
+      height: 90px
+      @media (max-width: 991px)
+        width: 380px
+      @media (max-width: 575px)
+        padding: 12px 20px
+        width: 100%
+      @media (max-width: 340px)
+        font-size: 14px
+  &__social
+    @media (max-width: 1199px)
+      margin-bottom: 30px
+      @media (max-width: 991px)
+        margin-bottom: 0
+
+// section-faq
+
+.section-faq
+  padding: 100px 0
+  background-color: $color_lightBlue
+  @media (max-width: 1199px)
+    padding: 70px 0
+  @media (max-width: 767px)
+    padding: 50px 0
+  @media (max-width: 575px)
+    padding: 30px 0
+  &__heading
+    margin-bottom: 50px
+    @media (max-width: 575px)
+      margin-bottom: 25px
+  &__accordion
+    position: relative
+    z-index: 10
+  &__item
+    margin-bottom: 0
+    padding: 20px 24px 10px 24px
+    border-width: 1px 0 0 0
+    border-radius: 0
+    background-color: $color_lightBlue
+    color: $color_dark
+    @media (max-width: 575px)
+      padding: 10px 24px 0 24px
+    &:hover
+      background-color: $color_lightBlue
+      color: $color_dark
+    &:last-child
+      border-bottom: 1px solid $color_dark
+  &__content
+    margin-bottom: 10px
+    color: $color_dark
+  &__header
+    position: relative
+    p
+      max-width: 990px
+      @media (max-width: 1199px)
+        max-width: 800px
+      @media (max-width: 991px)
+        max-width: 575px
+      @media (max-width: 767px)
+        max-width: 400px
+      @media (max-width: 575px)
+        max-width: 210px
+    &::before
+      content: ""
+      position: absolute
+      top: 50%
+      right: 0
+      transform: translateY(-50%)
+      width: 32px
+      height: 32px
+      background-image: url('../img/icons/plus.svg')
+      background-size: cover
+      background-repeat: no-repeat
+      @media (max-width: 767px)
+        width: 24px
+        height: 24px
+      @media (max-width: 575px)
+        width: 20px
+        height: 20px
+    &.active::before
+      content: ""
+      background-image: url('../img/icons/minus.svg')
+
+.footer
+  padding: 100px 0 50px 0
+  background-color: black
+  @media (max-width: 1199px)
+    padding: 75px 0 50px 0
+  @media (max-width: 767px)
+    padding: 50px 0 30px 0
+  &__container
+    position: relative
+  &__img
+    position: absolute
+    top: -280px
+    left: -50px
+    z-index: 1
+    @media (max-width: 1199px)
+      top: -190px
+      left: -200px
+      opacity: 0.3
+    @media (max-width: 992px)
+      top: 100px
+      width: 600px
+      opacity: 1
+    @media (max-width: 767px)
+      display: none
+  &__top
+    position: relative
+    margin-bottom: 50px
+    z-index: 10
+    @media (max-width: 575px)
+      margin-bottom: 30px
+  &__bottom
+    position: relative
+    display: flex
+    justify-content: space-between
+    font-family: 'Inter'
+    font-size: 12px
+    line-height: 145%
+    color: #B9B9B9
+    z-index: 10
+    @media (max-width: 575px)
+      flex-direction: column
+      align-items: center
+      text-align: center
+    a
+      color: #B9B9B9
+  &__copyright
+    flex: 0 1 40%
+    @media (max-width: 992px)
+      flex: 0 1 50%
+    @media (max-width: 575px)
+      flex: 0 1 100%
+      margin-bottom: 20px
+      width: 100%
+  &__confidentiality
+    display: flex
+    flex-direction: column
+    align-items: flex-end
+    flex: 0 1 25%
+    @media (max-width: 992px)
+      flex: 0 1 50%
+    @media (max-width: 575px)
+      flex: 0 1 100%
+  &__hr-copiright,
+  &__hr-confidentiality
+    margin-bottom: 30px
+    width: 100%
+    border: none
+    border-top: 1px solid white
+    opacity: 0.2
+    @media (max-width: 575px)
+      margin-bottom: 15px
+  &__hr-confidentiality
+    @media (max-width: 575px)
+      display: none
+  &__title
+    @media (max-width: 1199px)
+      font-size: 30px
+    @media (max-width: 575px)
+      font-size: 28px

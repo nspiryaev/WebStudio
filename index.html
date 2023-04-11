@@ -1,0 +1,970 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Web-студия по захвату рынка</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./img/favicons/favicon-16x16.png">
+  <link rel="manifest" href="./img/favicons/site.webmanifest">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container header__container">
+      <div class="header__logo logo">
+        <a href="#" class="logo__link">
+          <img src="./img/logo.png" alt="Логотип" class="logo__img">
+        </a>
+      </div>
+      <nav class="header__nav">
+        <ul class="header__list">
+          <li class="header__item">
+            <a href="#cases" class="header__link">
+              Кейсы
+            </a>
+          </li>
+          <li class="header__item">
+            <a href="#portfolio" class="header__link">
+              Портфолио
+            </a>
+          </li>
+          <li class="header__item">
+            <a href="#faq" class="header__link">
+              Вопрос-ответ
+            </a>
+          </li>
+          <li class="header__item">
+            <a href="#" class="header__link">
+              Заказать
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a href="#" class="social__link">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_1_398)">
+                  <path
+                    d="M17.507 14.307L17.498 14.382C15.299 13.286 15.069 13.14 14.785 13.566C14.588 13.861 14.014 14.53 13.841 14.728C13.666 14.923 13.492 14.938 13.195 14.803C12.895 14.653 11.932 14.338 10.792 13.318C9.90399 12.523 9.30799 11.548 9.13199 11.248C8.83899 10.742 9.45199 10.67 10.01 9.61399C10.11 9.40399 10.059 9.23899 9.98498 9.08999C9.90998 8.93999 9.31299 7.46999 9.06299 6.88399C8.82298 6.29999 8.57599 6.37399 8.39099 6.37399C7.81499 6.32399 7.39398 6.33199 7.02298 6.71799C5.40898 8.49199 5.81598 10.322 7.19699 12.268C9.91099 15.82 11.357 16.474 14.001 17.382C14.715 17.609 15.366 17.577 15.881 17.503C16.455 17.412 17.648 16.782 17.897 16.077C18.152 15.372 18.152 14.787 18.077 14.652C18.003 14.517 17.807 14.442 17.507 14.307Z"
+                    fill="white" />
+                  <path
+                    d="M20.52 3.44894C12.831 -3.98406 0.106 1.40694 0.101 11.8929C0.101 13.9889 0.65 16.0329 1.696 17.8379L0 23.9999L6.335 22.3479C14.24 26.6179 23.996 20.9479 24 11.8989C24 8.72295 22.76 5.73394 20.505 3.48794L20.52 3.44894ZM22.002 11.8659C21.996 19.4989 13.617 24.2659 6.99 20.3699L6.63 20.1559L2.88 21.1309L3.885 17.4859L3.646 17.1109C-0.478 10.5459 4.26 1.96594 12.072 1.96594C14.726 1.96594 17.217 3.00094 19.093 4.87594C20.968 6.73494 22.002 9.22594 22.002 11.8659Z"
+                    fill="white" />
+                </g>
+                <defs>
+                  <clippath id="clip0_1_398">
+                    <rect width="24" height="24" fill="white" />
+                  </clippath>
+                </defs>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_1_401)">
+                  <path
+                    d="M9.417 15.181L9.02 20.765C9.588 20.765 9.834 20.521 10.129 20.228L12.792 17.683L18.31 21.724C19.322 22.288 20.035 21.991 20.308 20.793L23.93 3.82101L23.931 3.82001C24.252 2.32401 23.39 1.73901 22.404 2.10601L1.11399 10.257C-0.339005 10.821 -0.317005 11.631 0.866995 11.998L6.31 13.691L18.953 5.78001C19.548 5.38601 20.089 5.60401 19.644 5.99801L9.417 15.181Z"
+                    fill="white" />
+                </g>
+                <defs>
+                  <clippath id="clip0_1_401">
+                    <rect width="24" height="24" fill="white" />
+                  </clippath>
+                </defs>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_1_403)">
+                  <path
+                    d="M23.155 13.893C23.871 7.86599 22.811 4.06099 20.899 2.33999L20.9 2.33899C17.814 -0.600006 7.39202 -1.03501 3.70002 2.47099C2.04202 4.18599 1.45802 6.703 1.39402 9.819C1.33002 12.936 1.25402 18.775 6.69502 20.359H6.70002L6.69502 22.778C6.69502 22.778 6.65802 23.758 7.28402 23.955C8.00002 24.187 8.32402 23.732 10.551 21.072C14.275 21.395 17.135 20.655 17.46 20.547C18.212 20.295 22.467 19.732 23.155 13.893ZM10.918 19.37C10.918 19.37 8.56102 22.309 7.82802 23.072C7.58802 23.32 7.32502 23.297 7.32902 22.805C7.32902 22.482 7.34702 18.789 7.34702 18.789C2.73402 17.467 3.00602 12.495 3.05602 9.894C3.10602 7.292 3.58202 5.16099 4.98602 3.72599C8.22502 0.688994 17.362 1.36799 19.69 3.55599C22.536 6.07899 21.523 13.207 21.529 13.45C20.944 18.324 17.496 18.633 16.862 18.844C16.591 18.934 14.076 19.581 10.918 19.37Z"
+                    fill="white" />
+                  <path
+                    d="M12.222 4.297C11.837 4.297 11.837 4.897 12.222 4.902C15.209 4.925 17.669 7.007 17.696 10.826C17.696 11.229 18.286 11.224 18.281 10.821H18.28C18.248 6.706 15.562 4.32 12.222 4.297Z"
+                    fill="white" />
+                  <path
+                    d="M16.151 10.193C16.142 10.591 16.731 10.61 16.736 10.207C16.785 7.938 15.386 6.06901 12.757 5.87201C12.372 5.84401 12.332 6.44901 12.716 6.47701C14.996 6.65001 16.197 8.20601 16.151 10.193Z"
+                    fill="white" />
+                  <path
+                    d="M15.521 12.774C15.027 12.488 14.524 12.666 14.316 12.947L13.881 13.51C13.66 13.796 13.247 13.758 13.247 13.758C10.233 12.961 9.42697 9.80701 9.42697 9.80701C9.42697 9.80701 9.38997 9.38001 9.66597 9.15101L10.21 8.70101C10.482 8.48501 10.654 7.96501 10.377 7.45401C9.63697 6.11701 9.13997 5.65601 8.88697 5.30201C8.62097 4.96901 8.22097 4.89401 7.80497 5.11901H7.79597C6.93097 5.62501 5.98397 6.57201 6.28697 7.54701C6.80397 8.57501 7.75397 11.852 10.782 14.328C12.205 15.499 14.457 16.699 15.413 16.976L15.422 16.99C16.364 17.304 17.28 16.32 17.769 15.429V15.422C17.986 14.991 17.914 14.583 17.597 14.316C17.035 13.768 16.187 13.163 15.521 12.774Z"
+                    fill="white" />
+                  <path
+                    d="M13.169 8.10399C14.13 8.15999 14.596 8.66199 14.646 9.69299C14.664 10.096 15.249 10.068 15.231 9.66499C15.167 8.31899 14.465 7.56899 13.201 7.49899C12.816 7.47599 12.78 8.08099 13.169 8.10399Z"
+                    fill="white" />
+                </g>
+                <defs>
+                  <clippath id="clip0_1_403">
+                    <rect width="24" height="24" fill="white" />
+                  </clippath>
+                </defs>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <hr class="header__hr">
+  </header>
+
+  <main>
+    <div class="wrapper">
+      <section class="section-hero">
+        <div class="container section-hero__container">
+          <ul class="section-hero__list">
+            <li class="section-hero__item">
+              <h1 class="section-hero__heading">
+                Разработка Landing Page с продвижением в <span>Я</span>ндекс Директ «ПОД КЛЮЧ»
+              </h1>
+              <p class="section-hero__description">
+                Делаем продающие сайты, которые приносят заявки даже в кризис за счет полного погружения в Ваш проект
+              </p>
+              <button class="section-hero__btn btn">
+                <span>Обсудить проект</span>
+              </button>
+            </li>
+            <li class="section-hero__item">
+              <div class="section-hero__content-wrapper">
+                <img src="./img/coins.svg" alt="Иконка манеток" class="section-hero__img">
+                <p class="section-hero__guarantee">
+                  Не будет заявок - <br>вернём деньги!
+                </p>
+              </div>
+            </li>
+          </ul>
+          <img src="./img/rocket.png" alt="Ракета" class="section-hero__rocket">
+          <img src="./img/fire-1.png" alt="Абстрактный огонь от ракеты" class="section-hero__fire-1">
+          <img src="./img/fire-2.png" alt="Абстрактный огонь" class="section-hero__fire-2">
+          <img src="./img/fire-3.png" alt="Абстрактный огонь" class="section-hero__fire-3">
+        </div>
+      </section>
+
+      <section class="section-facts">
+        <div class="container section-facts__container">
+          <div class="section-facts__content">
+            <h2 class="section-facts__heading heading">
+              Печальные факты
+            </h2>
+            <ul class="section-facts__list">
+              <li class="section-facts__item">
+                <div class="section-facts__number number"> <span>1</span> </div>
+                <p class="section-facts__description section-facts__description_one description">
+                  Большинство “маркетологов” из различных веб-студий начинают создавать сайт сразу же, как только
+                  получили от Вас первое письмо. Без уточнений. Без изучения рынка, продукта, потенциальных клиентов и
+                  конкурентов.
+                </p>
+              </li>
+              <li class="section-facts__item">
+                <div class="section-facts__number number"> <span>2</span> </div>
+                <p class="section-facts__description section-facts__description_two description">
+                  Многие “специалисты” даже не знают о том, что нужно проводить маркетинговое исследование на базе
+                  которого, затем и должен создаваться сайт? Только единицы разбираются в маркетинге и
+                  интернет-маркетинге
+                </p>
+              </li>
+            </ul>
+          </div>
+
+          <div class="section-facts__think think">
+            <div class="think__content">
+              <h3 class="think__title title">
+                А теперь задумайтесь
+              </h3>
+              <p class="think__description description">
+                Какой сайт Вам сделает человек, который ничего не понимает в Вашем бизнесе и слабо ориентируется в
+                рекламе и маркетинге?
+              </p>
+              <p class="think__qick">
+                Зато это <br> будет быстро...
+              </p>
+              <img src="./img/question.svg" alt="Вопросительный знак" class="think__img">
+            </div>
+            <div class="think__shadow"></div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <section class="section-why">
+      <div class="container section-why__container">
+        <div class="section-why__wrapper">
+          <img src="./img/computer.png" alt="Ноутбук" class="section-why__notebook">
+          <img src="./img/abstraction.png" alt="Абстракция" class="section-why__abstraction">
+          <div class="section-why__content">
+            <h3 class="section-why__title title">
+              Почему к нам?
+            </h3>
+            <p class="section-why__description description">
+              Мы создаем эффективные Landing Page и рекламу в Яндекс Директ, экономим Ваши деньги и помогаем увеличить
+              прибыль.
+            </p>
+            <button class="section-why__btn btn">
+              <span>Обсудить проект</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-work">
+      <div class="container">
+        <h2 class="section-work__heading heading">
+          Посмотрите, как работаем <br> над Вашим проектом мы
+        </h2>
+
+        <div class="section-work__accordion accordion">
+          <div class="accordion__item accordion__item_active">
+            <div class="accordion__header"><span>1.</span> Глубоко погружаемся в задачу</div>
+            <div class="accordion__content accordion__content_active">Пропускаем через себя гигабайты информации о
+              товаре, целевой аудитории,
+              конкурентах. Факты и фактики, значительные аргументы и крохотные утверждения. Все складываем в единое
+              целое. Так, чтобы у нас появилось желание стать Вашим клиентом. Только в таком состоянии можно убедительно
+              объяснить Вашему клиенту, почему обращаться нужно именно к Вам</div>
+          </div>
+          <div class="accordion__item ">
+            <div class="accordion__header"><span></span> Повышаем эффективность маркетинга</div>
+            <div class="accordion__content">На основе собранной информации и понимании какие потребности и боли
+              испытывают Ваши потенциальные клиенты, мы создаем для них ценностное предложение (оффер), а затем
+              усиливаем его с помощью УТП (уникальное торговое предложение - уникальный признак Вашего предложения,
+              который всегда отличается от других). Всё это позволяет улучшить конверсию сайта и повысить эффективность
+              рекламных усилий.</div>
+          </div>
+          <div class="accordion__item">
+            <div class="accordion__header"><span></span> Разрабатываем прототип будущего Landing Page</div>
+            <div class="accordion__content">Визуально представляем как будет выглядеть Ваш будущий Landing Page.
+              Формируем структуру сайта, раставляем блоки и пишем тексты, которые раскрывают преимущества Вашего
+              предложения, убеждают и продают.</div>
+          </div>
+          <div class="accordion__item">
+            <div class="accordion__header"><span></span> Создаем неповторимый дизайн</div>
+            <div class="accordion__content">Рисуем дизайн под конкретную целевую аудитоию, а не для всех. Когда Вашему
+              потенциальному клиенту нравится сайт - это подсознательно вызывает у него положительные эмоции, а значит и
+              градус доверия к предложению на сайте будет выше.</div>
+          </div>
+          <div class="accordion__item">
+            <div class="accordion__header"><span></span> Превращаем дизайн в настоящий сайт</div>
+            <div class="accordion__content">Мы уверены, что вы хотите получить сайт, который загружается быстро и может
+              быть расширен в будущем. Поэтому мы используем только ручную верстку, создавая его с помощью HTML, CSS и
+              JavaScript, мы НЕ используем визуальные редакторы типа "Тильда". Такой подход гарантирует, что ваш сайт
+              будет загружаться моментально и будет иметь возможность расширения функционала в будущем. К тому же, мы
+              хотим обеспечить вас надежностью и гибкостью в одном пакете, что не гарантирует визуальный редактор. Если
+              ваш сайт будет сверстан в визуальном редакторе, то при потребности в расширении его функционала,
+              вероятность того, что его придется верстать заново с нуля, значительно возрастает.</div>
+          </div>
+          <div class="accordion__item">
+            <div class="accordion__header"><span></span> Проверяем и тестируем готовый сайт</div>
+            <div class="accordion__content">Мы уделяем огромное внимание качеству нашей работы, и каждый проект, который
+              мы выполняем, проходит двойной контроль. Сначала наш руководитель студии Николай Спиряев лично проверяет
+              каждый пункт проекта, чтобы убедиться, что он соответствует нашим высоким стандартам качества. Затем,
+              после того, как проект был полностью проверен и одобрен Николаем, он отправляется нашему заказчику. Мы
+              понимаем, что для наших клиентов качество работы - это критически важный фактор, и поэтому мы делаем все
+              возможное, чтобы каждый проект был выполнен на высшем уровне.</div>
+          </div>
+          <div class="accordion__item">
+            <div class="accordion__header"><span></span> Собираем и подготавливаем ключевые фразы для Яндекс Директ
+            </div>
+            <div class="accordion__content">Ключевые фразы для будущей рекламы отбираются
+              вручную, что позволяет провести смысловой анализ по каждой из фраз на их целевую принадлежность к теме
+              продукта рекламы.
+              Такой подход позволяет, сразу же, после запуска рекламы получать на сайт максимально целевых посетителей.
+            </div>
+          </div>
+          <div class="accordion__item">
+            <div class="accordion__header"><span></span> Создаём объявления, которые умеют продавать</div>
+            <div class="accordion__content">Изображения, заголовки и тексты объявлений создаются на базе потребностей
+              клиента, а также анализа прямых конкурентов, что позволяет объявлениям быть уникальными и завоёвывать
+              необходимое внимание Ваших клиентов.</div>
+          </div>
+          <div class="accordion__item">
+            <div class="accordion__header"><span></span> Запускаем рекламу</div>
+            <div class="accordion__content">После запуска рекламы наша работа не заканчивается. Мы вовлекаем в работу
+              максимально возможное количество созданных
+              объявлений в рекламных кампаниях. Стабилизируем объем приходящего трафика в рамках выделенного
+              бюджета на рекламу.
+              Защищаемся от недобросовестных конкурентов (от скликивателей). Работаем над качеством приходящего трафика.
+            </div>
+          </div>
+          <div class="accordion__item">
+            <div class="accordion__header"><span></span> Отвечаем за результат</div>
+            <div class="accordion__content">Мы хорошо разбираемся в маркетинге и умеем делать нужный результат. Поэтому
+              мы смело гарантируем: Не будет лидов - вернем деньги! </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-benefit">
+      <div class="container section-benefit__container">
+        <div class="section-benefit__content-wrapper content-wrapper">
+          <div class="content-wrapper__item">
+            <h3 class="content-wrapper__title title">
+              Получите выгодное предложение
+            </h3>
+            <p class="content-wrapper__description description">
+              Отправьте нам ваши контактные данные и мы свяжемся с вами в ближайшее время или напишите нам в любой из
+              мессенджер:
+            </p>
+            <div class="content-wrapper__social social">
+              <ul class="social__list">
+                <li class="social__item">
+                  <a href="#" class="social__link">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_1_398)">
+                        <path
+                          d="M17.507 14.307L17.498 14.382C15.299 13.286 15.069 13.14 14.785 13.566C14.588 13.861 14.014 14.53 13.841 14.728C13.666 14.923 13.492 14.938 13.195 14.803C12.895 14.653 11.932 14.338 10.792 13.318C9.90399 12.523 9.30799 11.548 9.13199 11.248C8.83899 10.742 9.45199 10.67 10.01 9.61399C10.11 9.40399 10.059 9.23899 9.98498 9.08999C9.90998 8.93999 9.31299 7.46999 9.06299 6.88399C8.82298 6.29999 8.57599 6.37399 8.39099 6.37399C7.81499 6.32399 7.39398 6.33199 7.02298 6.71799C5.40898 8.49199 5.81598 10.322 7.19699 12.268C9.91099 15.82 11.357 16.474 14.001 17.382C14.715 17.609 15.366 17.577 15.881 17.503C16.455 17.412 17.648 16.782 17.897 16.077C18.152 15.372 18.152 14.787 18.077 14.652C18.003 14.517 17.807 14.442 17.507 14.307Z"
+                          fill="white" />
+                        <path
+                          d="M20.52 3.44894C12.831 -3.98406 0.106 1.40694 0.101 11.8929C0.101 13.9889 0.65 16.0329 1.696 17.8379L0 23.9999L6.335 22.3479C14.24 26.6179 23.996 20.9479 24 11.8989C24 8.72295 22.76 5.73394 20.505 3.48794L20.52 3.44894ZM22.002 11.8659C21.996 19.4989 13.617 24.2659 6.99 20.3699L6.63 20.1559L2.88 21.1309L3.885 17.4859L3.646 17.1109C-0.478 10.5459 4.26 1.96594 12.072 1.96594C14.726 1.96594 17.217 3.00094 19.093 4.87594C20.968 6.73494 22.002 9.22594 22.002 11.8659Z"
+                          fill="white" />
+                      </g>
+                      <defs>
+                        <clippath>
+                          <rect width="24" height="24" fill="white" />
+                        </clippath>
+                      </defs>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a href="#" class="social__link">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_1_401)">
+                        <path
+                          d="M9.417 15.181L9.02 20.765C9.588 20.765 9.834 20.521 10.129 20.228L12.792 17.683L18.31 21.724C19.322 22.288 20.035 21.991 20.308 20.793L23.93 3.82101L23.931 3.82001C24.252 2.32401 23.39 1.73901 22.404 2.10601L1.11399 10.257C-0.339005 10.821 -0.317005 11.631 0.866995 11.998L6.31 13.691L18.953 5.78001C19.548 5.38601 20.089 5.60401 19.644 5.99801L9.417 15.181Z"
+                          fill="white" />
+                      </g>
+                      <defs>
+                        <clippath>
+                          <rect width="24" height="24" fill="white" />
+                        </clippath>
+                      </defs>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a href="#" class="social__link">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_1_403)">
+                        <path
+                          d="M23.155 13.893C23.871 7.86599 22.811 4.06099 20.899 2.33999L20.9 2.33899C17.814 -0.600006 7.39202 -1.03501 3.70002 2.47099C2.04202 4.18599 1.45802 6.703 1.39402 9.819C1.33002 12.936 1.25402 18.775 6.69502 20.359H6.70002L6.69502 22.778C6.69502 22.778 6.65802 23.758 7.28402 23.955C8.00002 24.187 8.32402 23.732 10.551 21.072C14.275 21.395 17.135 20.655 17.46 20.547C18.212 20.295 22.467 19.732 23.155 13.893ZM10.918 19.37C10.918 19.37 8.56102 22.309 7.82802 23.072C7.58802 23.32 7.32502 23.297 7.32902 22.805C7.32902 22.482 7.34702 18.789 7.34702 18.789C2.73402 17.467 3.00602 12.495 3.05602 9.894C3.10602 7.292 3.58202 5.16099 4.98602 3.72599C8.22502 0.688994 17.362 1.36799 19.69 3.55599C22.536 6.07899 21.523 13.207 21.529 13.45C20.944 18.324 17.496 18.633 16.862 18.844C16.591 18.934 14.076 19.581 10.918 19.37Z"
+                          fill="white" />
+                        <path
+                          d="M12.222 4.297C11.837 4.297 11.837 4.897 12.222 4.902C15.209 4.925 17.669 7.007 17.696 10.826C17.696 11.229 18.286 11.224 18.281 10.821H18.28C18.248 6.706 15.562 4.32 12.222 4.297Z"
+                          fill="white" />
+                        <path
+                          d="M16.151 10.193C16.142 10.591 16.731 10.61 16.736 10.207C16.785 7.938 15.386 6.06901 12.757 5.87201C12.372 5.84401 12.332 6.44901 12.716 6.47701C14.996 6.65001 16.197 8.20601 16.151 10.193Z"
+                          fill="white" />
+                        <path
+                          d="M15.521 12.774C15.027 12.488 14.524 12.666 14.316 12.947L13.881 13.51C13.66 13.796 13.247 13.758 13.247 13.758C10.233 12.961 9.42697 9.80701 9.42697 9.80701C9.42697 9.80701 9.38997 9.38001 9.66597 9.15101L10.21 8.70101C10.482 8.48501 10.654 7.96501 10.377 7.45401C9.63697 6.11701 9.13997 5.65601 8.88697 5.30201C8.62097 4.96901 8.22097 4.89401 7.80497 5.11901H7.79597C6.93097 5.62501 5.98397 6.57201 6.28697 7.54701C6.80397 8.57501 7.75397 11.852 10.782 14.328C12.205 15.499 14.457 16.699 15.413 16.976L15.422 16.99C16.364 17.304 17.28 16.32 17.769 15.429V15.422C17.986 14.991 17.914 14.583 17.597 14.316C17.035 13.768 16.187 13.163 15.521 12.774Z"
+                          fill="white" />
+                        <path
+                          d="M13.169 8.10399C14.13 8.15999 14.596 8.66199 14.646 9.69299C14.664 10.096 15.249 10.068 15.231 9.66499C15.167 8.31899 14.465 7.56899 13.201 7.49899C12.816 7.47599 12.78 8.08099 13.169 8.10399Z"
+                          fill="white" />
+                      </g>
+                      <defs>
+                        <clippath>
+                          <rect width="24" height="24" fill="white" />
+                        </clippath>
+                      </defs>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="content-wrapper__item">
+            <form action="#" class="content-wrapper__form form">
+              <input type="tel" name="phone" placeholder="Ваш номер телефона" required="" class="form__input">
+              <button type="submit" class="form__btn btn">
+                <span>Получить коммерческое <br> предложение</span>
+              </button>
+              <p class="form__desctiption">
+                Я согласен условиями предоставления услуг и <a href="#" target="_blank" class="form__link">обработкой
+                  моих персональных
+                  данных</a> при
+                нажатии
+                «Получить предложение»
+              </p>
+            </form>
+          </div>
+        </div>
+        <img src="./img/phone.png" alt="Смартфон" class="section-benefit__img">
+      </div>
+    </section>
+
+    <section class="section-case" id="#cases">
+      <div class="container">
+        <div class="section-case__header">
+          <h2 class="section-case__heading heading">
+            Кейс по сотрудничеству с болгарским застройщиком
+          </h2>
+          <a href="https://bulgariahome.ru/" target="_blank" class="section-case__link">
+            bulgariahome.ru
+          </a>
+        </div>
+
+        <div class="section-case__problems">
+          <div class="section-case__content-propblems">
+            <div class="section-case__title color-white">
+              Проблемы
+            </div>
+            <ul class="section-case__list">
+              <li class="section-case__item color-white">
+                <span class="section-case__number">1</span>
+                <p class="section-case__text">
+                  Лиды, которые приходили по рекламе были недостаточно качественными. Т.е. люди, которые оставляли
+                  заявку на покупку квартиры в Болгарии реально не имели средств на эту покупку. Было только желание
+                  продать свое текущее желье в РФ и за эти деньги, купить жилье в Болгарии
+                </p>
+              </li>
+              <li class="section-case__item color-white">
+                <span class="section-case__number">2</span>
+                <p class="section-case__text">
+                  Очень ограниченый рекламный бюджет
+                </p>
+              </li>
+            </ul>
+          </div>
+          <img src="./img/portfolio/bulgariahome-ru.png" alt="Изображение сайта по продаже недвижимости в Болгарии"
+            class="section-case__img-site">
+        </div>
+
+        <div class="section-case__solution">
+          <div class="section-case__content-solution">
+            <div class="section-case__title">
+              Решение
+            </div>
+            <ul class="section-case__list">
+              <li class="section-case__item">
+                <span class="section-case__number">1</span>
+                <p class="section-case__text">
+                  Был выявлен самый многочисленный и маржинальный <span class="bold">сегмент целевой аудитории</span>
+                  (пенсионеры от 45 лет и старше) и под его потребности составлено предложение и разработан новый <span
+                    class="bold">Landing page</span>.
+                </p>
+              </li>
+              <li class="section-case__item">
+                <span class="section-case__number">2</span>
+                <p class="section-case__text">
+                  Бюджет на рекламу сильно ограничен, а это означает что на поиске реламировать нет смысла. Был взят
+                  прицел на <span class="bold">Сети яндекса (РСЯ)</span>. В сетях реклама и раньше работала, но работала
+                  она более чем <span class="bold">по 600 ключевым фразам</span> Понятно, что с ограниченным бюджетом
+                  невозможно включить в работу все фразы, поэтому были выявлены <span class="bold">всего 15 фраз</span>,
+                  которые на протяжение последних месяцев
+                  показывали лучшие результаты по конверсии.
+                </p>
+              </li>
+              <li class="section-case__item">
+                <span class="section-case__number">3</span>
+                <p class="section-case__text">
+                  На каждую из этих фраз было создано объявление с текстом отсекающим тех пользователь у которых бюджет
+                  <span class="bold">на покупку менее, чем 25 000 евро</span>.
+                </p>
+              </li>
+              <li class="section-case__item">
+                <span class="section-case__number">4</span>
+                <p class="section-case__text">
+                  Были исключены из показов все сегменты пользователей <span class="bold">от 0 до 44 лет</span>,
+                  оставили только тот сегмент целевой аудитории, под который был создан сайт и рекламное предложение.
+                </p>
+              </li>
+              <li class="section-case__item">
+                <span class="section-case__number">5</span>
+                <p class="section-case__text">
+                  <span class="bold">Исключили Россию из показов</span> (т.к. в большинстве случаев, покупают только при
+                  личном осмотре недвижимости, но в данный момент у россиян есть сложности в пересечении границы
+                  Болгарии). Стали
+                  показывать рекламу исключительно <span class="bold">на русскоговорящую аудиторию в Европе</span>.
+                </p>
+              </li>
+            </ul>
+          </div>
+          <img src="./img/arrows.png" alt="Круг из стрелок" class="section-case__img-arrows">
+        </div>
+
+        <div class="section-case__result">
+          <div class="section-case__content-result">
+            <div class="section-case__title">
+              Результат
+            </div>
+            <div class="section-case__box-top box-top">
+              <div class="box-top__image">
+                <img src="./img/scrinshot.png" alt="Скриншот из кабинета партнера" class="box-top__img">
+              </div>
+              <div class="box-top__content">
+                <ul class="box-top__list">
+                  <li class="box-top__item">
+                    <div class="box-top__content">
+                      <span class="box-top__number">134</span>
+                      <p class="box-top__text">
+                        заинтересованных в покупке пользователей за два месяца работы, по цене 118, 91 руб за одну
+                        заявку.
+                      </p>
+                    </div>
+                  </li>
+                  <li class="box-top__item">
+                    <div class="box-top__content">
+                      <span class="box-top__number">3</span>
+                      <p class="box-top__text">
+                        квартиры продано за март, общей стоимостью 99 000 евро
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="section-case__box-bottom box-bottom">
+              <div class="box-bottom__content">
+                <img src="./img/icons/agreement.svg" alt="Рукопожатие" class="box-bottom__img">
+                <p class="box-bottom__text">
+                  Недвижимость - это дорогой товар и, обычно, цикл сделки занимает от 3 месяцев до года от момента
+                  заявки. В нашем же случае цикл сделок получился менее двух месяцев.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-portfolio" id="#portfolio">
+      <div class="container">
+        <h2 class="section-portfolio__heading heading">
+          Есть на что посмотреть
+        </h2>
+        <ul class="section-portfolio__list">
+          <li class="section-portfolio__item portfolio-card">
+            <div class="portfolio-card__content">
+              <h3 class="portfolio-card__title title">
+                ТО Баграйн
+              </h3>
+              <div class="portfolio-card__name">
+                Окрасочное оборудование
+              </div>
+              <p class="portfolio-card__description">
+                заинтересованных в покупке пользователей за два месяца работы, по цене 118, 91 руб за одну заявку.
+              </p>
+              <a href="#" target="_blank" class="portfolio-card__link">
+                bagrayn.com
+              </a>
+            </div>
+            <div class="portfolio-card__image">
+              <img src="./img/portfolio/site-1.png" alt="сайт" class="portfolio-card__img">
+            </div>
+          </li>
+          <li class="section-portfolio__item portfolio-card">
+            <div class="portfolio-card__content">
+              <h3 class="portfolio-card__title title">
+                ТО Баграйн
+              </h3>
+              <div class="portfolio-card__name">
+                Окрасочное оборудование
+              </div>
+              <p class="portfolio-card__description">
+                заинтересованных в покупке пользователей за два месяца работы, по цене 118, 91 руб за одну заявку.
+              </p>
+              <a href="#" target="_blank" class="portfolio-card__link">
+                bagrayn.com
+              </a>
+            </div>
+            <div class="portfolio-card__image">
+              <img src="./img/portfolio/site-2.png" alt="сайт" class="portfolio-card__img">
+            </div>
+          </li>
+          <li class="section-portfolio__item portfolio-card">
+            <div class="portfolio-card__content">
+              <h3 class="portfolio-card__title title">
+                ТО Баграйн
+              </h3>
+              <div class="portfolio-card__name">
+                Окрасочное оборудование
+              </div>
+              <p class="portfolio-card__description">
+                заинтересованных в покупке пользователей за два месяца работы, по цене 118, 91 руб за одну заявку.
+              </p>
+              <a href="#" target="_blank" class="portfolio-card__link">
+                bagrayn.com
+              </a>
+            </div>
+            <div class="portfolio-card__image">
+              <img src="./img/portfolio/site-1.png" alt="сайт" class="portfolio-card__img">
+            </div>
+          </li>
+          <li class="section-portfolio__item portfolio-card">
+            <div class="portfolio-card__content">
+              <h3 class="portfolio-card__title title">
+                ТО Баграйн
+              </h3>
+              <div class="portfolio-card__name">
+                Окрасочное оборудование
+              </div>
+              <p class="portfolio-card__description">
+                заинтересованных в покупке пользователей за два месяца работы, по цене 118, 91 руб за одну заявку.
+              </p>
+              <a href="#" target="_blank" class="portfolio-card__link">
+                bagrayn.com
+              </a>
+            </div>
+            <div class="portfolio-card__image">
+              <img src="./img/portfolio/site-2.png" alt="сайт" class="portfolio-card__img">
+            </div>
+          </li>
+        </ul>
+        <div class="section-portfolio__button">
+          <button class="section-portfolio__btn btn">
+            <span> Показать ещё</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-bonus">
+      <div class="container">
+        <div class="section-bonus__top">
+          <div class="section-bonus__wrapper-top">
+            <h3 class="section-bonus__title title">
+              При заказе лендинга, настройка рекламной кампании в Яндекс Директ и месяц её сопровождения - Бесплатно!
+            </h3>
+            <p class="section-bonus__deadline">
+              *Данное предложение действует при заказе услуги разработки только до 31.05.2023 года
+            </p>
+          </div>
+          <img src="./img/notebook.png" alt="Ноутбук" class="section-bonus__img">
+        </div>
+        <div class="section-bonus__bottom">
+          <div class="section-bonus__content">
+            <p class="section-bonus__other-studio">
+              А Вы знали, что большинство веб-студий, которые предлагают настройку рекламы в подарок настраивают её за
+              30 минут “большим пальцем задней ноги”?
+            </p>
+            <p class="section-bonus__other-studio">
+              В Яндекс Директ есть технологии, которые позволяют настроить рекламу без каких-либо усилий, на автомате.
+              Но вот отдача от такой рекламы в 99% случаях будет нулевой!
+            </p>
+          </div>
+          <div class="section-bonus__we">
+            <p class="section-bonus__description">
+              В отличии от других веб-студий мы выделяем от 5 дней сфокусированной работы на настройку качественной
+              рекламы! Это наша платная услуга, но до конца ноября мы сделали для Вас её бесплатной!
+            </p>
+          </div>
+
+          <div class="section-bonus__wrapper-bottom">
+            <form action="#" class="section-bonus__form form">
+              <input type="tel" name="phone" placeholder="Ваш номер телефона" required="" class="form__input">
+              <button type="submit" class="form__btn btn">
+                <span>Хочу заказать LP и получить настройку Яндекс Директ БЕСПЛАТНО</span>
+              </button>
+            </form>
+
+            <div class="section-bonus__social social">
+              <ul class="social__list">
+                <li class="social__item">
+                  <a href="#" class="social__link">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_1_398)">
+                        <path
+                          d="M17.507 14.307L17.498 14.382C15.299 13.286 15.069 13.14 14.785 13.566C14.588 13.861 14.014 14.53 13.841 14.728C13.666 14.923 13.492 14.938 13.195 14.803C12.895 14.653 11.932 14.338 10.792 13.318C9.90399 12.523 9.30799 11.548 9.13199 11.248C8.83899 10.742 9.45199 10.67 10.01 9.61399C10.11 9.40399 10.059 9.23899 9.98498 9.08999C9.90998 8.93999 9.31299 7.46999 9.06299 6.88399C8.82298 6.29999 8.57599 6.37399 8.39099 6.37399C7.81499 6.32399 7.39398 6.33199 7.02298 6.71799C5.40898 8.49199 5.81598 10.322 7.19699 12.268C9.91099 15.82 11.357 16.474 14.001 17.382C14.715 17.609 15.366 17.577 15.881 17.503C16.455 17.412 17.648 16.782 17.897 16.077C18.152 15.372 18.152 14.787 18.077 14.652C18.003 14.517 17.807 14.442 17.507 14.307Z"
+                          fill="#2D2D2D" />
+                        <path
+                          d="M20.52 3.44894C12.831 -3.98406 0.106 1.40694 0.101 11.8929C0.101 13.9889 0.65 16.0329 1.696 17.8379L0 23.9999L6.335 22.3479C14.24 26.6179 23.996 20.9479 24 11.8989C24 8.72295 22.76 5.73394 20.505 3.48794L20.52 3.44894ZM22.002 11.8659C21.996 19.4989 13.617 24.2659 6.99 20.3699L6.63 20.1559L2.88 21.1309L3.885 17.4859L3.646 17.1109C-0.478 10.5459 4.26 1.96594 12.072 1.96594C14.726 1.96594 17.217 3.00094 19.093 4.87594C20.968 6.73494 22.002 9.22594 22.002 11.8659Z"
+                          fill="#2D2D2D" />
+                      </g>
+                      <defs>
+                        <clippath>
+                          <rect width="24" height="24" fill="#2D2D2D" />
+                        </clippath>
+                      </defs>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a href="#" class="social__link">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_1_401)">
+                        <path
+                          d="M9.417 15.181L9.02 20.765C9.588 20.765 9.834 20.521 10.129 20.228L12.792 17.683L18.31 21.724C19.322 22.288 20.035 21.991 20.308 20.793L23.93 3.82101L23.931 3.82001C24.252 2.32401 23.39 1.73901 22.404 2.10601L1.11399 10.257C-0.339005 10.821 -0.317005 11.631 0.866995 11.998L6.31 13.691L18.953 5.78001C19.548 5.38601 20.089 5.60401 19.644 5.99801L9.417 15.181Z"
+                          fill="#2D2D2D" />
+                      </g>
+                      <defs>
+                        <clippath>
+                          <rect width="24" height="24" fill="#2D2D2D" />
+                        </clippath>
+                      </defs>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a href="#" class="social__link">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_1_403)">
+                        <path
+                          d="M23.155 13.893C23.871 7.86599 22.811 4.06099 20.899 2.33999L20.9 2.33899C17.814 -0.600006 7.39202 -1.03501 3.70002 2.47099C2.04202 4.18599 1.45802 6.703 1.39402 9.819C1.33002 12.936 1.25402 18.775 6.69502 20.359H6.70002L6.69502 22.778C6.69502 22.778 6.65802 23.758 7.28402 23.955C8.00002 24.187 8.32402 23.732 10.551 21.072C14.275 21.395 17.135 20.655 17.46 20.547C18.212 20.295 22.467 19.732 23.155 13.893ZM10.918 19.37C10.918 19.37 8.56102 22.309 7.82802 23.072C7.58802 23.32 7.32502 23.297 7.32902 22.805C7.32902 22.482 7.34702 18.789 7.34702 18.789C2.73402 17.467 3.00602 12.495 3.05602 9.894C3.10602 7.292 3.58202 5.16099 4.98602 3.72599C8.22502 0.688994 17.362 1.36799 19.69 3.55599C22.536 6.07899 21.523 13.207 21.529 13.45C20.944 18.324 17.496 18.633 16.862 18.844C16.591 18.934 14.076 19.581 10.918 19.37Z"
+                          fill="#2D2D2D" />
+                        <path
+                          d="M12.222 4.297C11.837 4.297 11.837 4.897 12.222 4.902C15.209 4.925 17.669 7.007 17.696 10.826C17.696 11.229 18.286 11.224 18.281 10.821H18.28C18.248 6.706 15.562 4.32 12.222 4.297Z"
+                          fill="#2D2D2D" />
+                        <path
+                          d="M16.151 10.193C16.142 10.591 16.731 10.61 16.736 10.207C16.785 7.938 15.386 6.06901 12.757 5.87201C12.372 5.84401 12.332 6.44901 12.716 6.47701C14.996 6.65001 16.197 8.20601 16.151 10.193Z"
+                          fill="#2D2D2D" />
+                        <path
+                          d="M15.521 12.774C15.027 12.488 14.524 12.666 14.316 12.947L13.881 13.51C13.66 13.796 13.247 13.758 13.247 13.758C10.233 12.961 9.42697 9.80701 9.42697 9.80701C9.42697 9.80701 9.38997 9.38001 9.66597 9.15101L10.21 8.70101C10.482 8.48501 10.654 7.96501 10.377 7.45401C9.63697 6.11701 9.13997 5.65601 8.88697 5.30201C8.62097 4.96901 8.22097 4.89401 7.80497 5.11901H7.79597C6.93097 5.62501 5.98397 6.57201 6.28697 7.54701C6.80397 8.57501 7.75397 11.852 10.782 14.328C12.205 15.499 14.457 16.699 15.413 16.976L15.422 16.99C16.364 17.304 17.28 16.32 17.769 15.429V15.422C17.986 14.991 17.914 14.583 17.597 14.316C17.035 13.768 16.187 13.163 15.521 12.774Z"
+                          fill="#2D2D2D" />
+                        <path
+                          d="M13.169 8.10399C14.13 8.15999 14.596 8.66199 14.646 9.69299C14.664 10.096 15.249 10.068 15.231 9.66499C15.167 8.31899 14.465 7.56899 13.201 7.49899C12.816 7.47599 12.78 8.08099 13.169 8.10399Z"
+                          fill="#2D2D2D" />
+                      </g>
+                      <defs>
+                        <clippath>
+                          <rect width="24" height="24" fill="#2D2D2D" />
+                        </clippath>
+                      </defs>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-faq" id="#faq">
+      <div class="container">
+        <h2 class="section-faq__heading heading">
+          Вопросы и ответы
+        </h2>
+
+        <div class="section-faq__accordion accordion">
+          <div class="accordion__item accordion__item_active section-faq__item">
+            <div class="accordion__header section-faq__header active">
+              <span></span>
+              <p>Каковы сроки реализации?</p>
+            </div>
+            <div class="accordion__content accordion__content_active section-faq__content">
+              <p>Разработка сайта это
+                небольшая часть пути, которую мы проходим совместно с заказчиком, после разработки мы занимаемся его
+                продвижением, улучшением на основании полученной статистики и откликов клиентов</p>
+            </div>
+          </div>
+          <div class="accordion__item section-faq__item">
+            <div class="accordion__header section-faq__header">
+              <span></span>
+              <p>Сколько будет стоить создание Landing
+                Page?</p>
+            </div>
+            <div class="accordion__content section-faq__content">
+              <p>Цена одностраничного сайта,
+                ориентированного на продажу товара или услуги от 100 000 тенге.</p>
+              <p>Цена многостраничного сайта для полного представления услуг и товаров, который содержит 2 и более
+                страниц
+                - от 250 000 тенге.</p>
+            </div>
+          </div>
+          <div class="accordion__item section-faq__item">
+            <div class="accordion__header section-faq__header">
+              <span></span>
+              <p>Как производится оплата?</p>
+            </div>
+            <div class="accordion__content section-faq__content">
+              <p>Оплата происходит на Kaspi Pay в 3 этапа: Макет, Дизайн
+                и Верстка</p>
+            </div>
+          </div>
+          <div class="accordion__item section-faq__item">
+            <div class="accordion__header section-faq__header">
+              <span></span>
+              <p>Есть ли поддержка продукта после реализации?</p>
+            </div>
+            <div class="accordion__content section-faq__content">
+              <p>Разработка сайта это небольшая часть пути, которую мы
+                проходим совместно с заказчиком, после разработки мы занимаемся его продвижением, улучшением на
+                основании
+                полученной статистики и откликов клиентов.</p>
+            </div>
+          </div>
+          <div class="accordion__item section-faq__item">
+            <div class="accordion__header section-faq__header">
+              <span></span>
+              <p>Можно ли заказать настройку рекламы без разработки сайта?</p>
+            </div>
+            <div class="accordion__content section-faq__content">
+              <p>Да, это возможно. Цена настройки рекламы в Яндекс
+                Директ у нас составляет 100 000 тенге. В эту стоимость входит настройка рекламы и один месяц её
+                сопровождения.</p>
+              <br>
+              <p>Стоимость последующих месяцев сопровождения - 50 000 тенге в месяц.</p>
+            </div>
+          </div>
+          <div class="accordion__item section-faq__item">
+            <div class="accordion__header section-faq__header">
+              <span></span>
+              <p>Почему при заказе разработки Landing Page Вы настраиваете Яндекс Директ бесплатно?</p>
+            </div>
+            <div class="accordion__content section-faq__content">
+              <p> Кроме настройки рекламы у нас есть услуга по её
+                сопровождению, куда входит:</p>
+              <br>
+              <ul>
+                <li>1. Работа с качеством приходящего трафика</li>
+                <li>2. Выявление неэффективного расходования бюджета</li>
+                <li>3. Работа над увеличением целевого трафика</li>
+                <li>4. Создание рекламной кампании для возврата заинтересованной
+                  аудитории в продукте рекламы (Ретаргетинг)</li>
+                <li>5. Тестирование работающих объявлений</li>
+                <li>6. Создание отдельных рекламных кампаний для разных регионов
+                  показов</li>
+                <li>7. Создание отдельной рекламной кампании для мобильных устройств</li>
+                <li>8. Создание рекламной кампании с графическими объявлениями</li>
+                <li>9. Создание дополнительных рекламных кампаний по ключевым фразам с приоритетом ниже высшего</li>
+                <li>10. Создание дополнительной рекламной кампании по сегментам
+                  аудитории.</li>
+              </ul>
+              <br>
+              <p>А ещё сюда входять еженедельные отчеты о проделанной работе и результатах, да и много ещё чего.</p>
+              <br>
+              <p>Это уже платная услуга и она составляет 50 000 тенге в месяц.</p>
+              <br>
+              <p> Когда клиент видит, что благодаря нашим усилиям на каждый вложенный тенге он зарабатывает 3, 5 или 10
+                тенге, то он понимает, что наше сотрудничество выгодно и есть смысл его развивать.</p>
+              <br>
+              <p>Именно поэтому мы решили взять весь процесс продаж в свои руки - от создания сайта до его продвижения в
+                Яндекс Директ, чтобы у нас была возможность сделать для клиента нужный ему результат.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__container">
+      <div class="footer__top">
+        <div class="footer__content-wrapper content-wrapper">
+          <div class="content-wrapper__item">
+            <h3 class="content-wrapper__title title footer__title">
+              Остались вопросы? <br> С удовольствием на них ответим!
+            </h3>
+            <p class="content-wrapper__description description">
+              Оставьте заявку, и мы проконсультируем вас по всем вопросам в течение ближайшего времени. А также
+              расскажем о нюансах разработки именно для вашей ниши.
+            </p>
+            <div class="content-wrapper__social social">
+              <ul class="social__list">
+                <li class="social__item">
+                  <a href="#" class="social__link">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_1_398)">
+                        <path
+                          d="M17.507 14.307L17.498 14.382C15.299 13.286 15.069 13.14 14.785 13.566C14.588 13.861 14.014 14.53 13.841 14.728C13.666 14.923 13.492 14.938 13.195 14.803C12.895 14.653 11.932 14.338 10.792 13.318C9.90399 12.523 9.30799 11.548 9.13199 11.248C8.83899 10.742 9.45199 10.67 10.01 9.61399C10.11 9.40399 10.059 9.23899 9.98498 9.08999C9.90998 8.93999 9.31299 7.46999 9.06299 6.88399C8.82298 6.29999 8.57599 6.37399 8.39099 6.37399C7.81499 6.32399 7.39398 6.33199 7.02298 6.71799C5.40898 8.49199 5.81598 10.322 7.19699 12.268C9.91099 15.82 11.357 16.474 14.001 17.382C14.715 17.609 15.366 17.577 15.881 17.503C16.455 17.412 17.648 16.782 17.897 16.077C18.152 15.372 18.152 14.787 18.077 14.652C18.003 14.517 17.807 14.442 17.507 14.307Z"
+                          fill="white" />
+                        <path
+                          d="M20.52 3.44894C12.831 -3.98406 0.106 1.40694 0.101 11.8929C0.101 13.9889 0.65 16.0329 1.696 17.8379L0 23.9999L6.335 22.3479C14.24 26.6179 23.996 20.9479 24 11.8989C24 8.72295 22.76 5.73394 20.505 3.48794L20.52 3.44894ZM22.002 11.8659C21.996 19.4989 13.617 24.2659 6.99 20.3699L6.63 20.1559L2.88 21.1309L3.885 17.4859L3.646 17.1109C-0.478 10.5459 4.26 1.96594 12.072 1.96594C14.726 1.96594 17.217 3.00094 19.093 4.87594C20.968 6.73494 22.002 9.22594 22.002 11.8659Z"
+                          fill="white" />
+                      </g>
+                      <defs>
+                        <clippath>
+                          <rect width="24" height="24" fill="white" />
+                        </clippath>
+                      </defs>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a href="#" class="social__link">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_1_401)">
+                        <path
+                          d="M9.417 15.181L9.02 20.765C9.588 20.765 9.834 20.521 10.129 20.228L12.792 17.683L18.31 21.724C19.322 22.288 20.035 21.991 20.308 20.793L23.93 3.82101L23.931 3.82001C24.252 2.32401 23.39 1.73901 22.404 2.10601L1.11399 10.257C-0.339005 10.821 -0.317005 11.631 0.866995 11.998L6.31 13.691L18.953 5.78001C19.548 5.38601 20.089 5.60401 19.644 5.99801L9.417 15.181Z"
+                          fill="white" />
+                      </g>
+                      <defs>
+                        <clippath>
+                          <rect width="24" height="24" fill="white" />
+                        </clippath>
+                      </defs>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a href="#" class="social__link">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_1_403)">
+                        <path
+                          d="M23.155 13.893C23.871 7.86599 22.811 4.06099 20.899 2.33999L20.9 2.33899C17.814 -0.600006 7.39202 -1.03501 3.70002 2.47099C2.04202 4.18599 1.45802 6.703 1.39402 9.819C1.33002 12.936 1.25402 18.775 6.69502 20.359H6.70002L6.69502 22.778C6.69502 22.778 6.65802 23.758 7.28402 23.955C8.00002 24.187 8.32402 23.732 10.551 21.072C14.275 21.395 17.135 20.655 17.46 20.547C18.212 20.295 22.467 19.732 23.155 13.893ZM10.918 19.37C10.918 19.37 8.56102 22.309 7.82802 23.072C7.58802 23.32 7.32502 23.297 7.32902 22.805C7.32902 22.482 7.34702 18.789 7.34702 18.789C2.73402 17.467 3.00602 12.495 3.05602 9.894C3.10602 7.292 3.58202 5.16099 4.98602 3.72599C8.22502 0.688994 17.362 1.36799 19.69 3.55599C22.536 6.07899 21.523 13.207 21.529 13.45C20.944 18.324 17.496 18.633 16.862 18.844C16.591 18.934 14.076 19.581 10.918 19.37Z"
+                          fill="white" />
+                        <path
+                          d="M12.222 4.297C11.837 4.297 11.837 4.897 12.222 4.902C15.209 4.925 17.669 7.007 17.696 10.826C17.696 11.229 18.286 11.224 18.281 10.821H18.28C18.248 6.706 15.562 4.32 12.222 4.297Z"
+                          fill="white" />
+                        <path
+                          d="M16.151 10.193C16.142 10.591 16.731 10.61 16.736 10.207C16.785 7.938 15.386 6.06901 12.757 5.87201C12.372 5.84401 12.332 6.44901 12.716 6.47701C14.996 6.65001 16.197 8.20601 16.151 10.193Z"
+                          fill="white" />
+                        <path
+                          d="M15.521 12.774C15.027 12.488 14.524 12.666 14.316 12.947L13.881 13.51C13.66 13.796 13.247 13.758 13.247 13.758C10.233 12.961 9.42697 9.80701 9.42697 9.80701C9.42697 9.80701 9.38997 9.38001 9.66597 9.15101L10.21 8.70101C10.482 8.48501 10.654 7.96501 10.377 7.45401C9.63697 6.11701 9.13997 5.65601 8.88697 5.30201C8.62097 4.96901 8.22097 4.89401 7.80497 5.11901H7.79597C6.93097 5.62501 5.98397 6.57201 6.28697 7.54701C6.80397 8.57501 7.75397 11.852 10.782 14.328C12.205 15.499 14.457 16.699 15.413 16.976L15.422 16.99C16.364 17.304 17.28 16.32 17.769 15.429V15.422C17.986 14.991 17.914 14.583 17.597 14.316C17.035 13.768 16.187 13.163 15.521 12.774Z"
+                          fill="white" />
+                        <path
+                          d="M13.169 8.10399C14.13 8.15999 14.596 8.66199 14.646 9.69299C14.664 10.096 15.249 10.068 15.231 9.66499C15.167 8.31899 14.465 7.56899 13.201 7.49899C12.816 7.47599 12.78 8.08099 13.169 8.10399Z"
+                          fill="white" />
+                      </g>
+                      <defs>
+                        <clippath>
+                          <rect width="24" height="24" fill="white" />
+                        </clippath>
+                      </defs>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="content-wrapper__item">
+            <form action="#" class="content-wrapper__form form">
+              <input type="tel" name="phone" placeholder="Ваш номер телефона" required="" class="form__input">
+              <button type="submit" class="form__btn btn">
+                <span>Получить коммерческое <br> предложение</span>
+              </button>
+              <p class="form__desctiption">
+                Я согласен условиями предоставления услуг и <a href="#" target="_blank" class="form__link">обработкой
+                  моих персональных
+                  данных</a> при
+                нажатии
+                «Получить предложение»
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="footer__copyright">
+          <hr class="footer__hr-copiright">
+          <p>
+            2022 © rocket-marketing.ru <br>
+            ИП Спиряев Н.В. <br>
+            ИНН 860412301244 <br>
+            <a href="mailto:info@rocket-marketing.ru" target="_blank" class="footer__mail">info@rocket-marketing.ru</a>
+          </p>
+        </div>
+        <div class="footer__confidentiality">
+          <hr class="footer__hr-confidentiality">
+          <a href="#" target="_blank">
+            Политика конфиденциальности
+          </a>
+        </div>
+      </div>
+      <img src="./img/phone-big.png" alt="Смартфон" class="footer__img">
+    </div>
+  </footer>
+
+  <script src="./js/script.js"></script>
+</body>
+
+</html>

@@ -71,3 +71,80 @@ elAnchors.forEach(item => {
   });
 });
 
+// Политика конфиденциальности
+
+const elPrivacyPolicyLink = document.querySelector('.footer__confidentiality a'),
+  elBody = document.querySelector('body');
+
+elPrivacyPolicyLink.addEventListener('click', function (event) {
+  event.preventDefault();
+
+  const elSectionPrivacy = document.querySelector('.section-privacy'),
+    elPrivacyClose = document.querySelector('.section-privacy__close');
+
+  elSectionPrivacy.style.opacity = '1';
+  elSectionPrivacy.style.visibility = 'visible';
+  elBody.style.overflow = 'hidden';
+
+  elPrivacyClose.addEventListener('click', () => {
+    elSectionPrivacy.style.opacity = '0';
+    elSectionPrivacy.style.visibility = 'hidden';
+    setTimeout(function () {
+      elBody.style.overflow = 'auto';
+    }, 260);
+  });
+
+});
+
+// Обработка персональных данных
+
+const elFormLinks = document.querySelectorAll('.form__link');
+
+elFormLinks.forEach(elFormLink => {
+  elFormLink.addEventListener('click', (event) => {
+    event.preventDefault();
+
+    const elPersonalData = document.querySelector('.personal-data'),
+      elPersonalDataClose = document.querySelector('.personal-data__close');
+
+    elPersonalData.style.opacity = '1';
+    elPersonalData.style.visibility = 'visible';
+    elBody.style.overflow = 'hidden';
+
+    elPersonalDataClose.addEventListener('click', () => {
+      elPersonalData.style.opacity = '0';
+      elPersonalData.style.visibility = 'hidden';
+      setTimeout(function () {
+        elBody.style.overflow = 'auto';
+      }, 260);
+    });
+  });
+});
+
+// Модальное окно с формой
+
+const elButtons = document.querySelectorAll('.button');
+
+elButtons.forEach(elButton => {
+  elButton.addEventListener('click', () => {
+
+    const elFormModal = document.querySelector('.form-modal'),
+      elFormModalClose = document.querySelector('.form-modal__close');
+
+    elFormModal.style.opacity = '1';
+    elFormModal.style.visibility = 'visible';
+    elBody.style.overflow = 'hidden';
+
+    elFormModalClose.addEventListener('click', () => {
+      elFormModal.style.opacity = '0';
+      elFormModal.style.visibility = 'hidden';
+      setTimeout(function () {
+        elBody.style.overflow = 'auto';
+      }, 260);
+    });
+
+  });
+});
+
+
+
